@@ -21,7 +21,7 @@ Plotly is a Python library for creating interactive and publication-quality grap
 Click on this link: https://hrs-1pdp.onrender.com/
 
 ## Demo:
-![HR Performance And Recruitment System - Google Chrome 2024-04-09 17-03-54](https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/5161f78a-4f06-476c-8198-c498d7c7e92a)
+<img src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/5161f78a-4f06-476c-8198-c498d7c7e92a" alt="HR Performance And Recruitment System" width="500">
 
 ## How to Run:
 To run the project, use the following command:
