@@ -23,9 +23,8 @@ Click on this link: https://hrs-1pdp.onrender.com/
 ## Demo:
 <img src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/d42dbe5e-930f-4dfe-8146-ffd186c06b9e" alt="849d9676-dcfa-434c-beef-16fa2fc04d98" width="700">
 
-<video controls width="500">
-    <source src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/ac2fe48a-13a9-48f0-8298-1d003febfeaf" type="video/mp4">
-</video>
+<img src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/79bfaf7b-ff20-4834-8d6d-0dfc1a376d57" alt="a68ea3af-4b9b-4510-b578-32ced29c7f28" width="700">
+
 
 
 ## How to Run:
