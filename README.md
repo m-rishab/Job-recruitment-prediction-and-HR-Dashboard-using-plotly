@@ -23,6 +23,8 @@ Click on this link: https://hrs-1pdp.onrender.com/
 ## Demo:
 <img src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/d42dbe5e-930f-4dfe-8146-ffd186c06b9e" alt="849d9676-dcfa-434c-beef-16fa2fc04d98" width="700">
 
+![Description of Image](https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/ac2fe48a-13a9-48f0-8298-1d003febfeaf)
+
 ## How to Run:
 To run the project, use the following command:
 `python app.py`
