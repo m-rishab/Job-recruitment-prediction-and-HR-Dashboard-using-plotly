@@ -25,7 +25,6 @@ Click on this link: https://hrs-1pdp.onrender.com/
 
 <video controls width="500">
     <source src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/ac2fe48a-13a9-48f0-8298-1d003febfeaf" type="video/mp4">
-    Your browser does not support the video tag.
 </video>
 
 
