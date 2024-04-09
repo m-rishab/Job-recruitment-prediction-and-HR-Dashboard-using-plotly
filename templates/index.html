@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Performance And Recruitment System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>   
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}" class="logo-link">HRS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="{{ url_for('recruitment') }}" class="nav-link"><i class="material-icons">person_add</i> Recruitment</a></li>
+                <li><a href="{{ url_for('HR_Dashboard') }}" class="nav-link"><i class="material-icons">dashboard</i> HR Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <div class="background-image">
+        <div class="title"><b>HR Performance and Job Recruitment System</b> efficiently identifies the <br> best candidates for your organization's job openings by analyzing their <br> qualifications, skills, 
+            and experience, ensuring a streamlined recruitment <br> process and optimal hiring decisions.</div>
+    </div>
+</body>
+</html>
