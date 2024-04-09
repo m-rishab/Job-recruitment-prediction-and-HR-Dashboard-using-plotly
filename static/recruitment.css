@@ -1,0 +1,159 @@
+/* CSS styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 24px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+.logo-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+.logo-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Yellow */
+    transition: width 0.3s ease;
+}
+
+.logo-link:hover::after {
+    width: 100%;
+}
+
+
+/* Navbar styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Yellow */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/recruitment.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 40px 20px; /* Increase padding to increase height */
+    background-color: rgba(255, 255, 255, 0.819); /* Adjust alpha value here */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+}
+
+.form-group .form-column {
+    width: 48%;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.predict-button {
+    background-color: #4caf9e;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: box-shadow 0.2s ease; /* Add transition effect */
+}
+
+.predict-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.predict-button:active {
+    background-color: #3e8e41;
+}
+.result-container {
+    text-align: center;
+    margin-top: -11px; /* Adjust the margin-top value as needed */
+    position: relative;
+    background-color: #fff2be;
+    z-index: 2; /* Set a higher z-index to ensure it's displayed on top of the background image */
+}

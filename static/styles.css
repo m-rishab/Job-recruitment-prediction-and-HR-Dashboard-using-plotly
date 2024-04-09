@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #000000;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.title:hover {
+    color: #edff93; /* Change color on hover */
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+.logo-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+.logo-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Yellow */
+    transition: width 0.3s ease;
+}
+
+.logo-link:hover::after {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Yellow */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('images/Home.jpg');
+     /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.background-image:hover {
+    filter: brightness(80%); /* Reduce brightness on hover */
+}
