@@ -10,7 +10,6 @@ nbformat
 numpy
 pandas
 plotly
-pywin32
 scikit-learn
 scipy
 seaborn
