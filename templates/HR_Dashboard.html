@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}"> <!-- Link to dashboard-specific CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}" class="logo-link">HRS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="{{ url_for('recruitment') }}" class="nav-link"><i class="material-icons">person_add</i> Recruitment</a></li>
+                <li><a href="{{ url_for('HR_Dashboard') }}" class="nav-link"><i class="material-icons">dashboard</i> HR Dashboard</a></li>
+            </ul>
+        </nav>
+    </header> 
+     <!-- Image Container -->
+     <div class="container mt-4">
+        <h2 style="text-align: center; font-weight: bold;">HR Dashboard-plots: Explore in 3D with Plotly</h2>
+        <div class="card-container">
+            <h2>Distribution of salary</h2>
+            <div class="image-container" onclick="togglePlot('salary')">
+                <img src="{{ url_for('static', filename='images/pie of salary.png') }}" alt="salary-plot Image">
+                <div id="salary-plot" class="plot" style="display: none;">
+                    {% include 'salary.html' %}
+                </div>
+            </div>
+        </div>
+    
+        <div class="card-container">
+            <h2>Distribution of department</h2>
+            <div class="image-container" onclick="togglePlot('department')">
+                <img src="{{ url_for('static', filename='images/pie of department.png') }}" alt="department-plot Image">
+                <div id="department-plot" class="plot" style="display: none;">
+                    {% include 'department.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Distribution of left or not</h2>
+            <div class="image-container" onclick="togglePlot('left')">
+                <img src="{{ url_for('static', filename='images/Pie of left.png') }}" alt="left-plot Image">
+                <div id="left-plot" class="plot" style="display: none;">
+                    {% include 'left.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Distribution of number of projects</h2>
+            <div class="image-container" onclick="togglePlot('number_project')">
+                <img src="{{ url_for('static', filename='images/pie of number_project.png') }}" alt="number_project-plot Image">
+                <div id="number_project-plot" class="plot" style="display: none;">
+                    {% include 'number_project.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Satisfaction-level</h2>
+            <div class="image-container" onclick="togglePlot('Satisfaction_level')">
+                <img src="{{ url_for('static', filename='images/Satisfaction_level.png') }}" alt="Satisfaction_level-plot Image">
+                <div id="Satisfaction_level-plot" class="plot" style="display: none;">
+                    {% include 'Satisfaction_level.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Satisfaction-level vs evaluation</h2>
+            <div class="image-container" onclick="togglePlot('satisvseval')">
+                <img src="{{ url_for('static', filename='images/satisvseval.png') }}" alt="satisvseval-plot Image">
+                <div id="satisvseval-plot" class="plot" style="display: none;">
+                    {% include 'satisvseval.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Feature-correlation</h2>
+            <div class="image-container" onclick="togglePlot('feature_correlation')">
+                <img src="{{ url_for('static', filename='images/Feature corr.png') }}" alt="feature_correlation-plot Image">
+                <div id="feature_correlation-plot" class="plot" style="display: none;">
+                    {% include 'feature_correlation.html' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h2>Kmeans Clustering</h2>
+            <div class="image-container" onclick="togglePlot('kmeans')">
+                <img src="{{ url_for('static', filename='images/churn.png') }}" alt="kmeans-plot Image">
+                <div id="kmeans-plot" class="plot" style="display: none;">
+                    {% include 'kmeans.html' %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more card-container divs with image-container inside to include additional images -->
+    </div>
+        
+    
+    
+    
+    <script>
+        function togglePlot(plotId) {
+    var plot = document.getElementById(plotId + '-plot');
+    if (plot.style.display === 'none') {
+        plot.style.display = 'block';
+    } else {
+        plot.style.display = 'none';
+    }
+}
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='recruitment.css') }}">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="{{ url_for('index') }}" class="logo-link">HRS</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}" class="nav-link"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="{{ url_for('recruitment') }}" class="nav-link"><i class="material-icons">person_add</i> Recruitment</a></li>
+            <li><a href="{{ url_for('HR_Dashboard') }}" class="nav-link"><i class="material-icons">dashboard</i> HR Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="background-image">
+    <div class="card">
+        <h2 style="text-align: center; margin: 0; padding: 25px; font-size: 29px; font-style: oblique;">Input Necessary Employee Criteria</h2>
+        <form method="post" action="/recruitment">
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="sl_no">Serial Number:</label>
+                    <input type="number" id="sl_no" name="sl_no" required>
+                </div>
+                <div class="form-column">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="ssc_p">SSC Percentage:</label>
+                    <input type="number" id="ssc_p" name="ssc_p" required>
+                </div>
+                <div class="form-column">
+                    <label for="hsc_p">HSC Percentage:</label>
+                    <input type="number" id="hsc_p" name="hsc_p" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="degree_p">Degree Percentage:</label>
+                    <input type="number" id="degree_p" name="degree_p" required>
+                </div>
+                <div class="form-column">
+                    <label for="workex">Work Experience:</label>
+                    <select id="workex" name="workex" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="etest_p">ETest Percentage:</label>
+                    <input type="number" id="etest_p" name="etest_p" required>
+                </div>
+                <div class="form-column">
+                    <label for="specialisation">Specialization:</label>
+                    <select id="specialisation" name="specialisation" required>
+                        <option value="Mkt&HR">Mkt&HR</option>
+                        <option value="Mkt&Fin">Mkt&Fin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="mba_p">MBA Percentage:</label>
+                    <input type="number" id="mba_p" name="mba_p" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="predict-button">Predict</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% if result %}
+    <div class="result-container container">
+        <h1>{{ result }}</h1>
+        <h3>{{ rec }}</h3>
+    </div>
+{% endif %}
+
+</body>
+</html>
