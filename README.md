@@ -22,4 +22,4 @@ Plotly is a Python library for creating interactive and publication-quality grap
 
 ## How to Run:
 To run the project, use the following command:
-* app.py *
+`python app.py`
