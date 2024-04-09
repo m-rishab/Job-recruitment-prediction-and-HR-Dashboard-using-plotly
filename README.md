@@ -17,6 +17,9 @@ Plotly is a Python library for creating interactive and publication-quality grap
 - Integration
 - Scalability
 
+## Live project
+Click on this link: https://hrs-1pdp.onrender.com/
+
 ## Demo:
 <img src="https://github.com/m-rishab/Job-recruitment-prediction-and-HR-Dashboard-using-plotly/assets/113618652/70e492c3-99bc-4a44-a439-3c1314584f4d" width="500" height="500">
 
